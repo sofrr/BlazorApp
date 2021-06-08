@@ -30,7 +30,7 @@
 
     public void SetActiveTab(ITab tab)
     {
-        if (ActiveTab == null)
+        if (ActiveTab != tab)
         {
             ActiveTab = tab;
             StateHasChanged();
